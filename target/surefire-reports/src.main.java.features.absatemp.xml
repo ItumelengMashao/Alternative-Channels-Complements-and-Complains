@@ -1,0 +1,26 @@
+<testsuite failures="0" name="src/main/java/features/absatemp.feature" skipped="0" tests="2" time="1.764498">
+  <testcase classname="src.main.java.features.absatemp" name="Get all list of complains and complements" time="1.663654">
+    <system-out>* header Accept = 'application/json' ...................................... passed
+* configure ssl = true .................................................... passed
+Given url 'https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints' . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == response ............................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.main.java.features.absatemp" name="Creating a Complaint/Complements" time="0.100844">
+    <system-out>* header Accept = 'application/json' ...................................... passed
+* configure ssl = true .................................................... passed
+Given url 'https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints' . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == response ............................................ passed
+* header Accept = 'application/json' ...................................... passed
+* configure ssl = true .................................................... passed
+Given url 'https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints' . passed
+And request  {"ComplaintDate":"2022-04-18T06:34:18.917","CustomerName":"Customer Name 3","CustomerSurname":"Customer Surname 3","CustomerCellphone":"27836679174","CustomerEmail":"customer2@example.com","CtmNumber":"S08132","AtmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"Reason":"Required denominations not available","Comments":"Required denominations not available"} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
