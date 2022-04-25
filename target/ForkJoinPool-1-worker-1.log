@@ -1,23 +1,56 @@
-11:26:25.817 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-11:26:26.712 request:
+11:26:42.216 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:26:45.069 request:
+1 > POST https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 417
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_332)
+{"complaintRef":"ACR0000028","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"}
+
+11:26:45.341 response time in milliseconds: 271.27
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Mon, 25 Apr 2022 09:26:45 GMT
+1 < Strict-Transport-Security: max-age=15724800; includeSubDomains
+
+11:26:45.343 [print] {
+  "complaintRef": "ACR0000028",
+  "complaintDate": "2022-04-18T06:34:18.917",
+  "customerName": "Customer Name 3",
+  "customerSurname": "Customer Surname 3",
+  "customerCellphone": "27836679174",
+  "customerEmail": "customer2@example.com",
+  "atmNumber": null,
+  "atmLocation": "HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria",
+  "isComplaint": true,
+  "reason": "Required denominations not available",
+  "comments": "Required denominations not available"
+}
+
+11:26:45.352 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:26:45.370 request:
 1 > GET https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints
 1 > Accept: application/json
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_322)
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_332)
 
-11:26:26.990 response time in milliseconds: 274.41
+11:26:45.438 response time in milliseconds: 64.82
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Tue, 19 Apr 2022 09:26:26 GMT
+1 < Date: Mon, 25 Apr 2022 09:26:45 GMT
 1 < Strict-Transport-Security: max-age=15724800; includeSubDomains
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
-[{"complaintRef":"ACR000000","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000002","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000018","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 5","customerSurname":"Customer Surname 5","customerCellphone":"08000000005","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000007","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 5","customerSurname":"Customer Surname 5","customerCellphone":"08000000005","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000019","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000020","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000021","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000022","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000023","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 31","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000024","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Nam876","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000025","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer dcgfvg","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000026","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer dcgfvg","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000027","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000028","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"}]
+[{"complaintRef":"ACR000000","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000002","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000018","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 5","customerSurname":"Customer Surname 5","customerCellphone":"08000000005","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000007","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 5","customerSurname":"Customer Surname 5","customerCellphone":"08000000005","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000019","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000020","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000021","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000022","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000023","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 31","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000024","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Nam876","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000025","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer dcgfvg","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000026","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer dcgfvg","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000027","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000028","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000029","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000030","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000031","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000032","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000033","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000034","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000035","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000036","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000037","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000038","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000039","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000040","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000041","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000042","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000043","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000044","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000045","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000046","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000047","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000048","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000049","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000050","complaintDate":"2021-09-21T14:35:41.663","customerName":"ITUMELENG","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"11111","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000051","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000052","complaintDate":"2021-09-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000053","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000054","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000055","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000056","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000057","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000058","complaintDate":"2022-04-16T16:46:18.917","customerName":"Customer Libertine","customerSurname":"Customer Surname 2","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":"S08054","atmLocation":"PNP OAKFIELDS, Cnr Oak and Hanekom Street, Benoni","isComplaint":true,"reason":"","comments":"Check complaint"},{"complaintRef":"ACR0000059","complaintDate":"2022-04-16T16:46:18.917","customerName":"Customer Libertine","customerSurname":"Customer Surname 2","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":"S08054","atmLocation":"PNP OAKFIELDS, Cnr Oak and Hanekom Street, Benoni","isComplaint":true,"reason":"","comments":"Check complaint"},{"complaintRef":"ACR0000060","complaintDate":"2021-09-21T14:35:41.663","customerName":"Itumeleng","customerSurname":"Mashao 1","customerCellphone":"0720706357","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000061","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"}]
 
-11:26:27.048 [print] [
+11:26:45.444 [print] [
   {
     "customerSurname": "Customer Surname 1",
     "reason": "Printing slip",
@@ -199,25 +232,499 @@
     "customerCellphone": "27836679174",
     "isComplaint": true,
     "customerName": "Customer Name 3"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Card swallowed",
+    "complaintDate": "2021-10-04T16:46:18.917",
+    "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+    "comments": "I withdrew money and didn't get my card back",
+    "complaintRef": "ACR0000029",
+    "customerEmail": "customer1@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Card swallowed",
+    "complaintDate": "2021-10-04T16:46:18.917",
+    "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+    "comments": "I withdrew money and didn't get my card back",
+    "complaintRef": "ACR0000030",
+    "customerEmail": "customer1@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000031",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 2"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Card swallowed",
+    "complaintDate": "2021-10-04T16:46:18.917",
+    "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+    "comments": "I withdrew money and didn't get my card back",
+    "complaintRef": "ACR0000032",
+    "customerEmail": "customer1@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000033",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 678346"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000034",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 678346"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000035",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 678346"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Card swallowed",
+    "complaintDate": "2021-10-04T16:46:18.917",
+    "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+    "comments": "I withdrew money and didn't get my card back",
+    "complaintRef": "ACR0000036",
+    "customerEmail": "customer1@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 3",
+    "reason": "Required denominations not available",
+    "complaintDate": "2022-04-18T06:34:18.917",
+    "atmLocation": "HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria",
+    "comments": "Required denominations not available",
+    "complaintRef": "ACR0000037",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 3"
+  },
+  {
+    "customerSurname": "Customer Surname 3",
+    "reason": "Required denominations not available",
+    "complaintDate": "2022-04-18T06:34:18.917",
+    "atmLocation": "HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria",
+    "comments": "Required denominations not available",
+    "complaintRef": "ACR0000038",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 3"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000039",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 678346"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000040",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000041",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000042",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000043",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000044",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 3",
+    "reason": "Required denominations not available",
+    "complaintDate": "2022-04-18T06:34:18.917",
+    "atmLocation": "HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria",
+    "comments": "Required denominations not available",
+    "complaintRef": "ACR0000045",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 3"
+  },
+  {
+    "customerSurname": "Customer Surname 3",
+    "reason": "Required denominations not available",
+    "complaintDate": "2022-04-18T06:34:18.917",
+    "atmLocation": "HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria",
+    "comments": "Required denominations not available",
+    "complaintRef": "ACR0000046",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 3"
+  },
+  {
+    "customerSurname": "Customer Surname 27",
+    "reason": "Card swallowed",
+    "complaintDate": "2021-10-04T16:46:18.917",
+    "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+    "comments": "I withdrew money and didn't get my card back",
+    "complaintRef": "ACR0000047",
+    "customerEmail": "customer5@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 27"
+  },
+  {
+    "customerSurname": "Customer Surname 27",
+    "reason": "Card swallowed",
+    "complaintDate": "2021-10-04T16:46:18.917",
+    "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+    "comments": "I withdrew money and didn't get my card back",
+    "complaintRef": "ACR0000048",
+    "customerEmail": "customer5@example.com",
+    "atmNumber": null,
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Name 27"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000049",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 2"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000050",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "11111",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "ITUMELENG"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000051",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Customer Name 1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000052",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S12345",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Mashao1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2022-04-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000053",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S12345",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Mashao1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2022-04-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000054",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S12345",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Mashao1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2022-04-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000055",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S12345",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Mashao1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2022-04-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000056",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S12345",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Mashao1"
+  },
+  {
+    "customerSurname": "Customer Surname 1",
+    "reason": "Printing slip",
+    "complaintDate": "2022-04-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000057",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S12345",
+    "customerCellphone": "0820000000",
+    "isComplaint": true,
+    "customerName": "Mashao1"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "",
+    "complaintDate": "2022-04-16T16:46:18.917",
+    "atmLocation": "PNP OAKFIELDS, Cnr Oak and Hanekom Street, Benoni",
+    "comments": "Check complaint",
+    "complaintRef": "ACR0000058",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08054",
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Libertine"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "",
+    "complaintDate": "2022-04-16T16:46:18.917",
+    "atmLocation": "PNP OAKFIELDS, Cnr Oak and Hanekom Street, Benoni",
+    "comments": "Check complaint",
+    "complaintRef": "ACR0000059",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08054",
+    "customerCellphone": "27836679174",
+    "isComplaint": true,
+    "customerName": "Customer Libertine"
+  },
+  {
+    "customerSurname": "Mashao 1",
+    "reason": "Printing slip",
+    "complaintDate": "2021-09-21T14:35:41.663",
+    "atmLocation": "Waterkloof Corner, Pretoria",
+    "comments": "I did not receive my slip when finishing transaction",
+    "complaintRef": "ACR0000060",
+    "customerEmail": "customer@email.com",
+    "atmNumber": "S13060",
+    "customerCellphone": "0720706357",
+    "isComplaint": true,
+    "customerName": "Itumeleng"
+  },
+  {
+    "customerSurname": "Customer Surname 2",
+    "reason": "Broken keypad",
+    "complaintDate": "2021-09-21T15:35:41.663",
+    "atmLocation": "Bernard Str, Woodhill, Menlyn",
+    "comments": "Some keys on the keyboard don't work",
+    "complaintRef": "ACR0000061",
+    "customerEmail": "customer2@example.com",
+    "atmNumber": "S08004",
+    "customerCellphone": "0820000002",
+    "isComplaint": true,
+    "customerName": "Customer Name 678346"
   }
 ]
 
-11:26:27.060 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-11:26:27.067 request:
+11:26:45.452 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+11:26:45.465 request:
 1 > POST https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints
 1 > Accept: application/json
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 393
+1 > Content-Length: 415
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_322)
-{"ComplaintDate":"2022-04-18T06:34:18.917","CustomerName":"Customer Name 3","CustomerSurname":"Customer Surname 3","CustomerCellphone":"27836679174","CustomerEmail":"customer2@example.com","CtmNumber":"S08132","AtmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"Reason":"Required denominations not available","Comments":"Required denominations not available"}
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_332)
+{"complaintRef":"ACR0000023","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 31","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"}
 
-11:26:27.148 response time in milliseconds: 80.43
+11:26:45.510 response time in milliseconds: 45.78
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Length: 0
-1 < Date: Tue, 19 Apr 2022 09:26:27 GMT
+1 < Date: Mon, 25 Apr 2022 09:26:45 GMT
 1 < Strict-Transport-Security: max-age=15724800; includeSubDomains
+
+11:26:45.511 [print] {
+  "complaintRef": "ACR0000023",
+  "complaintDate": "2021-10-04T16:46:18.917",
+  "customerName": "Customer Name 31",
+  "customerSurname": "Customer Surname 56",
+  "customerCellphone": "27836679174",
+  "customerEmail": "customer5@example.com",
+  "atmNumber": null,
+  "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+  "isComplaint": true,
+  "reason": "Card swallowed",
+  "comments": "I withdrew money and didn't get my card back"
+}
+
+11:26:45.512 request:
+2 > GET https://vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za/atmcomplaints
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: vmsatmapi.vms-atmcc-sit.rbb-banking.sdc-nonprod.caas.absa.co.za
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_332)
+
+11:26:45.570 response time in milliseconds: 55.77
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 25 Apr 2022 09:26:45 GMT
+2 < Strict-Transport-Security: max-age=15724800; includeSubDomains
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+[{"complaintRef":"ACR000000","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000002","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000018","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 5","customerSurname":"Customer Surname 5","customerCellphone":"08000000005","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000007","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 5","customerSurname":"Customer Surname 5","customerCellphone":"08000000005","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000019","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000020","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000021","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000022","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000023","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 31","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000024","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Nam876","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000025","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer dcgfvg","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000026","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer dcgfvg","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000027","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000028","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000029","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000030","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000031","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000032","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000033","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000034","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000035","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000036","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"27836679174","customerEmail":"customer1@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000037","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000038","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000039","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000040","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000041","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000042","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000043","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000044","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000045","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000046","complaintDate":"2022-04-18T06:34:18.917","customerName":"Customer Name 3","customerSurname":"Customer Surname 3","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":null,"atmLocation":"HILCREST BOULEVARD 1, 228 Lynnwood Road, Pretoria","isComplaint":true,"reason":"Required denominations not available","comments":"Required denominations not available"},{"complaintRef":"ACR0000047","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000048","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 27","customerSurname":"Customer Surname 27","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"},{"complaintRef":"ACR0000049","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 2","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000050","complaintDate":"2021-09-21T14:35:41.663","customerName":"ITUMELENG","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"11111","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000051","complaintDate":"2021-09-21T14:35:41.663","customerName":"Customer Name 1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000052","complaintDate":"2021-09-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000053","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000054","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000055","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000056","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000057","complaintDate":"2022-04-21T14:35:41.663","customerName":"Mashao1","customerSurname":"Customer Surname 1","customerCellphone":"0820000000","customerEmail":"customer@email.com","atmNumber":"S12345","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000058","complaintDate":"2022-04-16T16:46:18.917","customerName":"Customer Libertine","customerSurname":"Customer Surname 2","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":"S08054","atmLocation":"PNP OAKFIELDS, Cnr Oak and Hanekom Street, Benoni","isComplaint":true,"reason":"","comments":"Check complaint"},{"complaintRef":"ACR0000059","complaintDate":"2022-04-16T16:46:18.917","customerName":"Customer Libertine","customerSurname":"Customer Surname 2","customerCellphone":"27836679174","customerEmail":"customer2@example.com","atmNumber":"S08054","atmLocation":"PNP OAKFIELDS, Cnr Oak and Hanekom Street, Benoni","isComplaint":true,"reason":"","comments":"Check complaint"},{"complaintRef":"ACR0000060","complaintDate":"2021-09-21T14:35:41.663","customerName":"Itumeleng","customerSurname":"Mashao 1","customerCellphone":"0720706357","customerEmail":"customer@email.com","atmNumber":"S13060","atmLocation":"Waterkloof Corner, Pretoria","isComplaint":true,"reason":"Printing slip","comments":"I did not receive my slip when finishing transaction"},{"complaintRef":"ACR0000061","complaintDate":"2021-09-21T15:35:41.663","customerName":"Customer Name 678346","customerSurname":"Customer Surname 2","customerCellphone":"0820000002","customerEmail":"customer2@example.com","atmNumber":"S08004","atmLocation":"Bernard Str, Woodhill, Menlyn","isComplaint":true,"reason":"Broken keypad","comments":"Some keys on the keyboard don't work"},{"complaintRef":"ACR0000062","complaintDate":"2021-10-04T16:46:18.917","customerName":"Customer Name 31","customerSurname":"Customer Surname 56","customerCellphone":"27836679174","customerEmail":"customer5@example.com","atmNumber":null,"atmLocation":"CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg","isComplaint":true,"reason":"Card swallowed","comments":"I withdrew money and didn't get my card back"}]
+
+11:26:45.575 [print] {
+  "customerSurname": "Customer Surname 56",
+  "reason": "Card swallowed",
+  "complaintDate": "2021-10-04T16:46:18.917",
+  "atmLocation": "CASCADES CENTRE, Shop 26A Cascades Centre, Pietermaritzburg",
+  "comments": "I withdrew money and didn't get my card back",
+  "complaintRef": "ACR0000023",
+  "customerEmail": "customer5@example.com",
+  "atmNumber": null,
+  "customerCellphone": "27836679174",
+  "isComplaint": true,
+  "customerName": "Customer Name 31"
+}
 
